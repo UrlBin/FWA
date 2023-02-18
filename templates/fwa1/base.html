@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FWA - первое веб приложение</title>
+  <base href="/">
+  <link href="{% static '/fwa1/img/favicon.png' %}" rel="Shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="{% static '/fwa1/css/fwa1.css' %}">
+  <script>
+    window.config = {
+      appName: 'fwa1',
+      locale: ru
+      locales: {
+      'ru': 'Русский',
+      'en': 'English',
+      },
+    }
+  </script>
+
+</head>
+<body>
+  <div id="app"></div>
+  <script src="{% static '/fwa1/js/app.js' %}"></script>
+</body>
+</html>
